@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+@using CompileCrew.ViewModels.ContractVM
+@model CreateContractVM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+    <link rel="stylesheet" href="~/assets/css/main.css" asp-append-version="true">
+</head>
+<body>
+    <div class="create_form">
+        <form>
+            <div class="form-group">
+                <label asp-for="Email">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label asp-for="StartTime">Start time</label>
+                <input  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+            </div>
+            <div class="form-group">
+                <label asp-for="EndTime">End time</label>
+                <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label asp-for="BonusPercentage">Bonus  </label>
+                <input type="email" class="form-control" >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+              
+            <div asp-validation-summary="All"></div>
+        </form>
+    </div>
+</body>
+</html>

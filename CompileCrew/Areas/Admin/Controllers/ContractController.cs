@@ -7,6 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CompileCrew.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    //[Authorize(Roles = "Admin,Moderator")]
+
     public class ContractController : Controller
     {
         private readonly AppDbContext _context;
